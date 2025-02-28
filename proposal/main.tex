@@ -1,0 +1,75 @@
+\documentclass[8pt,mathserif]{beamer}
+\usepackage{eun}
+\usepackage{ctex, hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.4,debug]{beamerposter}
+\usepackage{College}
+% \renewcommand{\emph}[1]{{\kaishu #1}}
+
+\setbeamertemplate{bibliography item}[text]
+\bibliographystyle{plain}
+% 如果参考文献太多的话，可以像下面这样调整字体：
+% \tiny\bibliographystyle{plain}
+\setbeamerfont{footnote}{size=\tiny}
+\renewcommand{\thefootnote}{\tiny\arabic{footnote}}
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\newtheorem{thm}{定理}
+\newtheorem{cor}{推论}
+\newtheorem{proo}{证明}
+\newtheorem{prop}{性质}
+\newtheorem{defi}{定义}
+\newtheorem{probl}{问题}
+
+
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+\definecolor{zts}{rgb}{0.294, 0.486, 0.58}
+% \hypersetup{ colorlinks=true, linkcolor=zts}
+
+\lstset{
+    escapeinside={(*@}{@*)},
+    numbersep=5pt,
+    xleftmargin=5pt,
+    basicstyle=\ttfamily,
+    keywordstyle=\bfseries\ttfamily\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},
+    commentstyle=\ttfamily\color[RGB]{0,96,96},                % 设置代码注释的格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\tiny\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=single,
+    language=c++, 
+    keepspaces=true,
+}
+
+\setlength{\parskip}{1.5em}
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{{\songti\oldtextbf{#1}}}
+
+\author{张志心~~3210106357 \\ 浙江大学}
+\title{在线带测试多处理器调度问题竞争比下界研究}
+\date{2025 年 2 月 19 日}
+
+\begin{document}
+
+\fangsong
+\begin{frame}{数学科学学院-本科毕业设计-开题报告}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \vspace*{-0.5cm}
+            % \includegraphics[width=0.2\linewidth]{pic/ZJU_BLUE.pdf}
+        \end{center}
+    \end{figure}
+\end{frame}
+\input{draft.tex}
+\end{document}
