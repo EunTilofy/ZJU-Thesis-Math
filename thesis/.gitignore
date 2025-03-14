@@ -6,7 +6,7 @@ out/*
 out-*/*
 dist/*
 diff/*
-/*.pdf
+# /*.pdf
 /*.ttf*
 /*.ttc*
 *.ttf*
